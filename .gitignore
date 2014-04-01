@@ -1,0 +1,5 @@
+.bundle
+.pkg
+.vagrant
+Gemfile.lock
+.DS_Store
