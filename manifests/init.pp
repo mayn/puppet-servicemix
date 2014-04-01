@@ -43,8 +43,6 @@ if $source {
 } else {
     if $version =~ /^(\d+)\..*/ {
         $source_uri = "http://archive.apache.org/dist/servicemix/servicemix-${$1}/${$version}/apache-servicemix-${$version}.zip"
-#      $source_archive = "apache-servicemix-${$version}.zip"
-#      $source_uri = "http://www.apache.org/dyn/closer.cgi/servicemix/servicemix-${$1}/${$version}/${source_archive}"
     }else{
       fail("Unable to determine major revision from servicemix version '${version}'")
     }
