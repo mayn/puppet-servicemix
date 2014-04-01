@@ -32,10 +32,7 @@ if $path {
 }
 validate_string($install_path)
 
-#file { "${install_path}":
-#  ensure => "directory",
-#}
-validate_absolute_path("${install_path}")
+#validate_absolute_path("${install_path}")
 
 #build source url if one wasn't provided
 if $source {
