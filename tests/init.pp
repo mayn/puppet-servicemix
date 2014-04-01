@@ -8,4 +8,6 @@
 #
 # Learn more about module testing here: http://docs.puppetlabs.com/guides/tests_smoke.html
 #
-include servicemix
+class {'servicemix' :
+    version => '4.5.1',
+}
